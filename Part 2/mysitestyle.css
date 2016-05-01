@@ -1,0 +1,294 @@
+*{
+	font-family: Verdana;
+	color: #212121; /* font is not black, but dark grey.  Looks nicer. */
+}
+
+body{
+	background-color: #ceeefb;
+}
+
+div#bodybackground{
+	margin-top: 0em;
+	background: rgba(255, 255, 255, .8); /*white with .8 opacity*/
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2em;
+	padding-top: 3em;
+	margin-bottom: 5%;
+	border-radius: .45em;	
+}
+
+div#bodybackground>p:not(.bottomnote){
+	font-size: 10pt;
+	line-height: 150%;
+	padding-left: 5em;
+	padding-right: 5em;	
+}
+
+div#bodybackground>p a:link{
+	color: #0000ee;
+}
+
+div#bodybackground>p a:visited{
+	color: #551a8b;
+}
+
+p.bottomnote{
+	font-size: 8pt;
+	color: red;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+form.generalform{
+	font-size: 11pt;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+#pagetitle{
+	position: static;
+	margin-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	border-bottom-width: 2px;
+	border-bottom-color: ;
+}
+
+a:link{
+	color: #0000ee
+}
+
+a:visited{
+	color: #212121;
+}
+
+
+/****************************************************************************   Menu bar   ***/
+
+
+/* "siteheader" = my name at the top there */
+span.siteheader{
+	float: left;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	margin-top: .25em;
+}
+
+span#headerdivider{
+	float:left;
+	font-size: 20pt;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-weight: bold;
+	color: white;
+	margin-top: .25em;
+
+}
+
+/* This is the opaque rectangle that is probably unnecessary in the grand scheme of things but w/e the site works. */
+#menurectangle{
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+	background-color: #48aad4;
+	position: fixed;
+}
+
+a.menuitems{
+	display: inline-block;
+	text-decoration: none;
+	float: left;
+	padding-top: .25em;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 46px;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+span.menuitems{
+	vertical-align: -40%;
+	color: white;
+}
+
+a.menuitems:hover{
+	background-color: #6cc1e5;
+	padding-top: .3em;
+}
+
+
+/******************************************************************************   About me   ****/
+
+
+div#picturediv{
+	display: inline;
+	padding: 3em;
+	float: right;
+	margin-top: -2.6em;
+}
+
+img#meandjosh{
+	width: 200px;
+	border-radius: .3em;
+}
+
+p#musiclist{
+	text-align: center;
+}
+
+ul#musiclist{
+	font-size: 12pt;
+	font-weight: bold;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+a.musiclist, a.musiclist:visited{
+	text-decoration: none;
+	color: #1976d2;
+	background-color: #ddd;
+	border: 2px solid #1976d2;
+	display:block;
+	width:20em;
+	margin: auto;
+	margin-bottom: .2em;
+	padding: .5em;
+	/*padding-right: 2em;*/
+	text-align:center;
+}
+
+li.musiclist{
+	list-style: none;
+	width: 50em;
+}
+
+span#spotlogo{
+	float: right;
+	max-height: 1.4em;
+	max-width: 1.4em;
+
+}
+
+img#spotlogo{
+	width: 100%;
+	height: auto;
+}
+
+
+/*****************************************************************************   Fun stuff   *****/
+
+
+h3.funstuffheader{
+	text-decoration: underline;
+	font-weight: normal;
+	margin-left: 2em;
+}
+
+div#quizbackground{
+	width: 45%;
+	margin: auto;
+	height: 10em;
+	border-radius: .3rem;
+}
+
+div#buttondiv{
+	height: 100%;
+	width: 27%;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+}
+
+button#timerbutton{
+	color: #1976d2;
+	display: inline;
+	background-color: #ddd;
+	border: 2px solid #1976d2;
+	height: 100%;
+	width: 100%;
+	font-weight: bold;
+	font-size: 2em;
+	border-radius: .3rem;
+	box-shadow: 0 #27496d;
+	cursor: pointer;
+}
+
+button#timerbutton:focus{
+	outline: none;
+}
+
+button#timerbutton:hover{
+	box-shadow: 0px 1px #27496d;
+	/*cursor: pointer;*/
+}
+
+button#timerbutton:active{
+	box-shadow: 0px -1px #e3f2fd;
+	transform: translate(0px, 1px);
+}
+
+div#quizdiv{
+	height: 100%;
+	width: 73%;
+	display: inline-block;
+	box-sizing: border-box;
+	float: right;
+	text-align: center;
+	background-color: white;
+	border-radius: .3em;
+}
+
+p#quizquestion{
+	font-size: 15pt;
+	width: 90%;
+	margin: auto;
+	margin-top: 1em;
+}
+
+form#quizform input{
+	display: inline;
+	margin: auto;
+	margin-top: 2em;
+	font-size: 15;
+	text-align: center;
+}
+
+
+/**************************************************************************   File submitted   ****/
+
+
+table#fr{
+	border-collapse: collapse;
+	background-color: #cccccc;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+table#fr td:nth-child(even){
+	border-left: 1px solid black;
+}
+
+table#fr td{
+	padding-left: 4px;
+}
+
+table#fr .darkrow{
+	background-color: #a0a0a0;
+}
+
+table#fr th.filetableheader{
+	background-color: #a0a0a0;
+	padding: 5px;
+}
+
+table#fr td{
+	font-size: 10pt;
+}
+
